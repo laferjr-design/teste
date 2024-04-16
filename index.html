@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Roulette Game</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roleta</h1>
+        
+        <div class="antagonista">
+            <p class="perfil pensando hidden" id="pensando">⚙️</p>
+            <p class="perfil antagonista">👤</p>
+            <div class="vida"></div>
+            
+                <ul class="inventario antagonista">
+                    <li class="inventario-item"></li>
+                    <li class="inventario-item"></li>
+                    <li class="inventario-item"></li>
+                    <li class="inventario-item"></li>
+                </ul>
+        </div>
+        <div class="protagonista">
+            <ul class="inventario">
+                <li class="inventario-item"></li>
+                <li class="inventario-item"></li>
+                <li class="inventario-item"></li>
+                <li class="inventario-item"></li>
+            </ul>
+            <div class="vida"></div>
+        </div>
+        <button onclick="atirar(true)" class="botao">Atirar no Antagonista</button>
+        <button onclick="atirar(false)" class="botao">Atirar em Si</button>
+        <button onclick="reiniciar()" class="botao reiniciar" id="reiniciar">Reiniciar Partida</button>
+    </div>
+    <div id="log"></div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
